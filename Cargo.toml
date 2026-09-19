@@ -1,0 +1,19 @@
+[package]
+name = "gbuf"
+version = "0.9.0"
+authors = ["minorllama"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/minorllama"
+edition = "2024"
+
+[profile.release]
+lto = true
+opt-level = "z"
+
+[dependencies]
+eframe = "0.30"
+rfd = "0.11"
+chrono = "0.4.39"
+flate2 = "1.0.35"
+
